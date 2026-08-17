@@ -1,0 +1,19 @@
+# Netlify configuration for Alpha Research (Vite SPA)
+[build]
+  # build:seo = vite build + prerender every route to static HTML so non-JS
+  # crawlers (Bing, GPTBot, ClaudeBot, PerplexityBot, …) get fully-rendered
+  # pages. Prerender soft-fails, so a Chromium hiccup never blocks the deploy.
+  command = "npm run build:seo"
+  publish = "dist"
+
+[build.environment]
+  NODE_VERSION = "22"
+  # Let Puppeteer download & cache its Chromium during install.
+  PUPPETEER_CACHE_DIR = "/opt/build/repo/.cache/puppeteer"
+
+# SPA fallback: serve index.html for any path so client-side routes
+# like /blog and /blog/:slug work on direct load and refresh.
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
