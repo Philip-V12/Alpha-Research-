@@ -6,7 +6,8 @@
   "scripts": {
     "build": "vite build",
     "prerender": "node scripts/prerender.mjs",
-    "build:seo": "vite build && node scripts/prerender.mjs",
+    "gen:locations": "node scripts/gen-locations.mjs",
+    "build:seo": "node scripts/gen-locations.mjs && vite build && node scripts/prerender.mjs",
     "dev": "vite"
   },
   "dependencies": {
