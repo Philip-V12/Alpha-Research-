@@ -1,5 +1,5 @@
 import { Link } from 'react-router';
-import { ArrowRight, Clock, BookOpen } from 'lucide-react';
+import { ArrowRight, Clock, BookOpen, MapPin } from 'lucide-react';
 import { Seo } from '../components/Seo';
 import { ImageWithFallback } from '../components/figma/ImageWithFallback';
 import { SITE_NAME, SITE_URL } from '../seo/seo-config';
@@ -7,7 +7,7 @@ import { articles } from '../blog/articles';
 
 const BLOG_TITLE = 'Research & PhD Blog — Thesis, Publication & Academic Guides';
 const BLOG_DESCRIPTION =
-  'Expert guides on PhD thesis help, dissertation writing, research methodology, data analysis, journal publication, and academic editing — with support across Kerala.';
+  'Expert guides on PhD thesis help, dissertation writing, research methodology, data analysis, journal publication, and academic editing — with support across all states of India and worldwide.';
 
 // ItemList structured data so search engines and AI crawlers see the full index.
 const blogJsonLd = {
@@ -103,6 +103,35 @@ export function Blog() {
               </Link>
             ))}
           </div>
+        </div>
+      </section>
+
+      {/* Locations */}
+      <section className="pb-12 md:pb-16">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <Link
+            to="/blog/locations"
+            className="group block bg-white rounded-3xl overflow-hidden shadow-lg border-2 border-teal-100 hover:border-teal-500 hover:shadow-2xl transition"
+          >
+            <div className="p-6 md:p-10 flex flex-col md:flex-row md:items-center gap-6 justify-between">
+              <div>
+                <div className="flex items-center gap-2 text-teal-700 mb-3">
+                  <MapPin className="w-5 h-5" />
+                  <span className="uppercase tracking-widest text-xs font-semibold">Service Locations</span>
+                </div>
+                <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-2 group-hover:text-teal-600 transition">
+                  Research & PhD support in your city
+                </h2>
+                <p className="text-gray-600 max-w-2xl">
+                  Dedicated pages for scholars across India, the UAE, Qatar, Saudi Arabia, the UK, the USA,
+                  Germany, Austria, and Australia — Chennai, Bengaluru, London, New York, Dubai, Doha and 380+ more.
+                </p>
+              </div>
+              <span className="inline-flex items-center gap-2 bg-teal-600 text-white px-6 py-3 rounded-xl font-semibold shrink-0 group-hover:bg-teal-700 transition">
+                Browse locations <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition" />
+              </span>
+            </div>
+          </Link>
         </div>
       </section>
 
