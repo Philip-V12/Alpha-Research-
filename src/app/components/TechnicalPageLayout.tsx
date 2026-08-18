@@ -136,6 +136,13 @@ export function TechnicalPageLayout({
               <Mail className="w-5 h-5" />
               Contact Us Today
             </Link>
+            <p className="mt-6 text-sm text-white/90">
+              Available to scholars across India and worldwide —{' '}
+              <Link to="/blog/locations" className="underline font-semibold hover:text-white">
+                find research support in your city
+              </Link>
+              .
+            </p>
           </div>
         </div>
       </section>
