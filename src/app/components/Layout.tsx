@@ -64,7 +64,8 @@ export function Layout() {
             {/* Desktop Navigation */}
             <nav className="hidden md:flex gap-8">
               <Link to="/" className={`transition ${location.pathname === '/' ? 'text-teal-600 font-semibold' : 'text-gray-700 hover:text-teal-600'}`}>Home</Link>
-              <Link to="/services" className={`transition ${location.pathname === '/services' ? 'text-teal-600 font-semibold' : 'text-gray-700 hover:text-teal-600'}`}>Services</Link>
+              <Link to="/what-we-do" className={`transition ${location.pathname === '/what-we-do' ? 'text-teal-600 font-semibold' : 'text-gray-700 hover:text-teal-600'}`}>What We Do</Link>
+              <Link to="/services" className={`transition ${location.pathname === '/services' || location.pathname.startsWith('/services/') ? 'text-teal-600 font-semibold' : 'text-gray-700 hover:text-teal-600'}`}>Services</Link>
               <Link to="/blog" className={`transition ${location.pathname.startsWith('/blog') ? 'text-teal-600 font-semibold' : 'text-gray-700 hover:text-teal-600'}`}>Blog</Link>
               <Link to="/about" className={`transition ${location.pathname === '/about' ? 'text-teal-600 font-semibold' : 'text-gray-700 hover:text-teal-600'}`}>About</Link>
               <Link to="/contact" className={`transition ${location.pathname === '/contact' ? 'text-teal-600 font-semibold' : 'text-gray-700 hover:text-teal-600'}`}>Contact</Link>
@@ -89,6 +90,7 @@ export function Layout() {
           {mobileMenuOpen && (
             <nav className="md:hidden mt-4 pb-4 flex flex-col gap-4">
               <Link to="/" onClick={() => setMobileMenuOpen(false)} className="text-gray-700 hover:text-teal-600 transition">Home</Link>
+              <Link to="/what-we-do" onClick={() => setMobileMenuOpen(false)} className="text-gray-700 hover:text-teal-600 transition">What We Do</Link>
               <Link to="/services" onClick={() => setMobileMenuOpen(false)} className="text-gray-700 hover:text-teal-600 transition">Services</Link>
               <Link to="/blog" onClick={() => setMobileMenuOpen(false)} className="text-gray-700 hover:text-teal-600 transition">Blog</Link>
               <Link to="/about" onClick={() => setMobileMenuOpen(false)} className="text-gray-700 hover:text-teal-600 transition">About</Link>
@@ -135,11 +137,11 @@ export function Layout() {
             <div>
               <h4 className="font-bold mb-4">Services</h4>
               <ul className="space-y-2 text-sm text-gray-400">
-                <li><Link to="/services/thesis-statistics" className="hover:text-teal-400 transition">Thesis Statistics</Link></li>
-                <li><Link to="/services/thesis-editing" className="hover:text-teal-400 transition">Thesis Editing</Link></li>
-                <li><Link to="/services/phd-synopsis" className="hover:text-teal-400 transition">PhD Synopsis</Link></li>
-                <li><Link to="/services/research-paper" className="hover:text-teal-400 transition">Research Papers</Link></li>
-                <li><Link to="/services/journal-publication" className="hover:text-teal-400 transition">Journal Publication</Link></li>
+                <li><Link to="/services/statistical-analysis" className="hover:text-teal-400 transition">Statistical Analysis</Link></li>
+                <li><Link to="/services/dissertation-writing" className="hover:text-teal-400 transition">Dissertation Writing</Link></li>
+                <li><Link to="/services/manuscript-writing" className="hover:text-teal-400 transition">Manuscript Writing</Link></li>
+                <li><Link to="/services/formatting" className="hover:text-teal-400 transition">Formatting (APA/MLA/IEEE)</Link></li>
+                <li><Link to="/services/research-methodology" className="hover:text-teal-400 transition">Research Methodology</Link></li>
               </ul>
             </div>
             <div>
@@ -156,12 +158,32 @@ export function Layout() {
               <h4 className="font-bold mb-4">Company</h4>
               <ul className="space-y-2 text-sm text-gray-400">
                 <li><Link to="/about" className="hover:text-teal-400 transition">About Us</Link></li>
+                <li><Link to="/what-we-do" className="hover:text-teal-400 transition">What We Do</Link></li>
                 <li><Link to="/services" className="hover:text-teal-400 transition">Our Services</Link></li>
                 <li><Link to="/blog" className="hover:text-teal-400 transition">Blog</Link></li>
+                <li><Link to="/blog/locations" className="hover:text-teal-400 transition">Locations</Link></li>
                 <li><Link to="/contact" className="hover:text-teal-400 transition">Contact</Link></li>
               </ul>
             </div>
           </div>
+          {/* Popular locations — site-wide backlinks to key city pages */}
+          <div className="border-t border-gray-800 pt-8 mb-8">
+            <h4 className="font-bold mb-4 text-sm">Popular Locations</h4>
+            <div className="flex flex-wrap gap-x-4 gap-y-2 text-sm text-gray-400">
+              {[
+                ['Chennai', 'chennai'], ['Coimbatore', 'coimbatore'], ['Bengaluru', 'bengaluru'],
+                ['Hyderabad', 'hyderabad'], ['Kochi', 'kochi'], ['Mumbai', 'mumbai'],
+                ['New Delhi', 'new-delhi'], ['Kolkata', 'kolkata'], ['Pune', 'pune'],
+                ['Dubai', 'dubai'], ['Abu Dhabi', 'abu-dhabi'], ['Doha', 'doha'],
+                ['Riyadh', 'riyadh'], ['London', 'london'], ['New York', 'new-york'],
+                ['Berlin', 'berlin'], ['Sydney', 'sydney'],
+              ].map(([name, slug]) => (
+                <Link key={slug} to={`/blog/locations/${slug}`} className="hover:text-teal-400 transition">{name}</Link>
+              ))}
+              <Link to="/blog/locations" className="text-teal-400 font-semibold hover:text-teal-300 transition">All locations →</Link>
+            </div>
+          </div>
+
           <div className="border-t border-gray-800 pt-8">
             <p className="text-center text-sm text-gray-400 mb-2">
               &copy; 2026 Alpha Academic Research Consultants. All rights reserved.
