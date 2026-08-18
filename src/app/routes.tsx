@@ -3,6 +3,8 @@ import { Layout } from "./components/Layout";
 import { Home } from "./pages/Home";
 import { About } from "./pages/About";
 import { Services } from "./pages/Services";
+import { WhatWeDo } from "./pages/WhatWeDo";
+import ServiceItem from "./pages/ServiceItem";
 import { Contact } from "./pages/Contact";
 
 // Technical Pages - Software & Tools
@@ -35,6 +37,8 @@ import { JournalPublicationPage } from "./pages/services/JournalPublicationPage"
 
 import { Blog } from "./pages/Blog";
 import { BlogArticle } from "./pages/BlogArticle";
+import { LocationsHub } from "./pages/LocationsHub";
+import { LocationPage } from "./pages/LocationPage";
 
 import { NotFound } from "./pages/NotFound";
 
@@ -46,10 +50,14 @@ export const router = createBrowserRouter([
       { index: true, Component: Home },
       { path: "about", Component: About },
       { path: "services", Component: Services },
+      { path: "what-we-do", Component: WhatWeDo },
       { path: "contact", Component: Contact },
 
       // Blog / Articles
       { path: "blog", Component: Blog },
+      // Locations (static routes take precedence over blog/:slug)
+      { path: "blog/locations", Component: LocationsHub },
+      { path: "blog/locations/:slug", Component: LocationPage },
       { path: "blog/:slug", Component: BlogArticle },
 
       // Software & Tools
@@ -79,6 +87,14 @@ export const router = createBrowserRouter([
       { path: "services/thesis-chapters", Component: ThesisChaptersPage },
       { path: "services/research-paper", Component: ResearchPaperPage },
       { path: "services/journal-publication", Component: JournalPublicationPage },
+
+      // New categorized service item pages (statistical-analysis, spss-analysis,
+      // data-analysis, r-programming, computer-science, engineering, management,
+      // nursing-healthcare, social-sciences, mathematics, manuscript-writing,
+      // abstract-writing, dissertation-writing, chapter-writing,
+      // research-gap-analysis, problem-identification, formatting,
+      // research-methodology). Static routes above take precedence.
+      { path: "services/:slug", Component: ServiceItem },
 
       { path: "*", Component: NotFound },
     ],
