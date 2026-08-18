@@ -53,6 +53,26 @@
 
 ## Service pages
 
+- [All Services (hub)](https://alpharesearch.study/services)
+- [What We Do](https://alpharesearch.study/what-we-do)
+- [Statistical Analysis Services](https://alpharesearch.study/services/statistical-analysis)
+- [SPSS Analysis Service](https://alpharesearch.study/services/spss-analysis)
+- [Data Analysis Service](https://alpharesearch.study/services/data-analysis)
+- [R Programming Support](https://alpharesearch.study/services/r-programming)
+- [Computer Science Research Help](https://alpharesearch.study/services/computer-science)
+- [Engineering Research Help](https://alpharesearch.study/services/engineering)
+- [Management Research Help](https://alpharesearch.study/services/management)
+- [Nursing & Healthcare Research Help](https://alpharesearch.study/services/nursing-healthcare)
+- [Social Sciences Research Help](https://alpharesearch.study/services/social-sciences)
+- [Mathematics Research Help](https://alpharesearch.study/services/mathematics)
+- [Manuscript Writing Services](https://alpharesearch.study/services/manuscript-writing)
+- [Abstract Writing Services](https://alpharesearch.study/services/abstract-writing)
+- [Dissertation Writing Services](https://alpharesearch.study/services/dissertation-writing)
+- [Thesis Chapter Writing](https://alpharesearch.study/services/chapter-writing)
+- [Research Gap Analysis](https://alpharesearch.study/services/research-gap-analysis)
+- [Research Problem Identification](https://alpharesearch.study/services/problem-identification)
+- [Academic Formatting (APA/MLA/IEEE/Harvard)](https://alpharesearch.study/services/formatting)
+- [Research Methodology Help](https://alpharesearch.study/services/research-methodology)
 - [Thesis Statistics](https://alpharesearch.study/services/thesis-statistics)
 - [Thesis Editing](https://alpharesearch.study/services/thesis-editing)
 - [PhD Synopsis](https://alpharesearch.study/services/phd-synopsis)
@@ -64,6 +84,31 @@
 - [IEEE Journals](https://alpharesearch.study/journals/ieee)
 - [PubMed Journals](https://alpharesearch.study/journals/pubmed)
 - [ABDC Journals](https://alpharesearch.study/journals/abdc)
+
+## Service locations
+
+- [All service locations (India & UAE)](https://alpharesearch.study/blog/locations)
+- [Chennai](https://alpharesearch.study/blog/locations/chennai)
+- [Coimbatore](https://alpharesearch.study/blog/locations/coimbatore)
+- [Madurai](https://alpharesearch.study/blog/locations/madurai)
+- [Bengaluru](https://alpharesearch.study/blog/locations/bengaluru)
+- [Hyderabad](https://alpharesearch.study/blog/locations/hyderabad)
+- [Kochi](https://alpharesearch.study/blog/locations/kochi)
+- [Mumbai](https://alpharesearch.study/blog/locations/mumbai)
+- [New Delhi](https://alpharesearch.study/blog/locations/new-delhi)
+- [Kolkata](https://alpharesearch.study/blog/locations/kolkata)
+- [Pune](https://alpharesearch.study/blog/locations/pune)
+- [Thiruvananthapuram](https://alpharesearch.study/blog/locations/thiruvananthapuram)
+- [Abu Dhabi](https://alpharesearch.study/blog/locations/abu-dhabi)
+- [Dubai](https://alpharesearch.study/blog/locations/dubai)
+- [Doha, Qatar](https://alpharesearch.study/blog/locations/doha)
+- [Riyadh, Saudi Arabia](https://alpharesearch.study/blog/locations/riyadh)
+- [London, UK](https://alpharesearch.study/blog/locations/london)
+- [New York, USA](https://alpharesearch.study/blog/locations/new-york)
+- [Berlin, Germany](https://alpharesearch.study/blog/locations/berlin)
+- [Vienna, Austria](https://alpharesearch.study/blog/locations/vienna)
+- [Sydney, Australia](https://alpharesearch.study/blog/locations/sydney)
+- …and 380+ more cities and areas across India, the UAE, Qatar, Saudi Arabia, the UK, the USA, Germany, Austria, and Australia — each with a dedicated page (see the [locations index](https://alpharesearch.study/blog/locations) and [sitemap](https://alpharesearch.study/sitemap.xml)).
 
 ## Subject domains we cover
 
