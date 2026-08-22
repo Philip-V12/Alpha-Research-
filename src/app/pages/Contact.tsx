@@ -33,7 +33,7 @@ export function Contact() {
                 <a href="tel:+917306541212" className="hover:text-teal-600 transition">+91 730 654 1212</a>
               </p>
               <p className="text-gray-700">
-                <a href="tel:+447403895087" className="hover:text-teal-600 transition">+44 7403 895087</a>
+                
               </p>
               <p className="text-gray-700">Available 24/7</p>
             </div>
